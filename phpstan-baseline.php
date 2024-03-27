@@ -4,6 +4,51 @@ declare(strict_types=1);
 
 $ignoreErrors = [];
 $ignoreErrors[] = [
+    'message' => '#^Method Fisharebest\\\\Webtrees\\\\Arr\\:\\:concat\\(\\) should return Fisharebest\\\\Webtrees\\\\Arr\\<TKey of \\(int\\|string\\), TValue\\> but returns Fisharebest\\\\Webtrees\\\\Arr\\<\\(int\\|string\\), mixed\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/Arr.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Method Fisharebest\\\\Webtrees\\\\Arr\\:\\:filter\\(\\) should return Fisharebest\\\\Webtrees\\\\Arr\\<TKey of \\(int\\|string\\), TValue\\> but returns Fisharebest\\\\Webtrees\\\\Arr\\<\\(int\\|string\\), mixed\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/Arr.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Method Fisharebest\\\\Webtrees\\\\Arr\\:\\:flatten\\(\\) should return Fisharebest\\\\Webtrees\\\\Arr\\<int, TValue\\> but returns Fisharebest\\\\Webtrees\\\\Arr\\<\\(int\\|string\\), mixed\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/Arr.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Method Fisharebest\\\\Webtrees\\\\Arr\\:\\:map\\(\\) should return Fisharebest\\\\Webtrees\\\\Arr\\<TKey of \\(int\\|string\\), T\\> but returns Fisharebest\\\\Webtrees\\\\Arr\\<\\(int\\|string\\), mixed\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/Arr.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Method Fisharebest\\\\Webtrees\\\\Arr\\:\\:reverse\\(\\) should return Fisharebest\\\\Webtrees\\\\Arr\\<TKey of \\(int\\|string\\), TValue\\> but returns Fisharebest\\\\Webtrees\\\\Arr\\<\\(int\\|string\\), mixed\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/Arr.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Method Fisharebest\\\\Webtrees\\\\Arr\\:\\:sort\\(\\) should return Fisharebest\\\\Webtrees\\\\Arr\\<TKey of \\(int\\|string\\), TValue\\> but returns Fisharebest\\\\Webtrees\\\\Arr\\<\\(int\\|string\\), mixed\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/Arr.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Method Fisharebest\\\\Webtrees\\\\Arr\\:\\:sortKeys\\(\\) should return Fisharebest\\\\Webtrees\\\\Arr\\<TKey of \\(int\\|string\\), TValue\\> but returns Fisharebest\\\\Webtrees\\\\Arr\\<\\(int\\|string\\), mixed\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/Arr.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Method Fisharebest\\\\Webtrees\\\\Arr\\:\\:unique\\(\\) should return Fisharebest\\\\Webtrees\\\\Arr\\<TKey of \\(int\\|string\\), TValue\\> but returns Fisharebest\\\\Webtrees\\\\Arr\\<\\(int\\|string\\), mixed\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/Arr.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Parameter \\#1 \\.\\.\\.\\$arrays of function array_merge expects array, TValue given\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/Arr.php',
+];
+$ignoreErrors[] = [
     'message' => '#^Cannot call method find\\(\\) on mixed\\.$#',
     'count' => 1,
     'path' => __DIR__ . '/app/Auth.php',
@@ -89,12 +134,7 @@ $ignoreErrors[] = [
     'path' => __DIR__ . '/app/Container.php',
 ];
 $ignoreErrors[] = [
-    'message' => '#^Constant Fisharebest\\\\Webtrees\\\\DB\\:\\:COLLATION_ASCII is unused\\.$#',
-    'count' => 1,
-    'path' => __DIR__ . '/app/DB.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Constant Fisharebest\\\\Webtrees\\\\DB\\:\\:COLLATION_UTF8 is unused\\.$#',
+    'message' => '#^Match expression does not handle remaining value\\: string$#',
     'count' => 1,
     'path' => __DIR__ . '/app/DB.php',
 ];
@@ -102,6 +142,91 @@ $ignoreErrors[] = [
     'message' => '#^Method Fisharebest\\\\Webtrees\\\\DB\\:\\:driverName\\(\\) should return string but returns mixed\\.$#',
     'count' => 1,
     'path' => __DIR__ . '/app/DB.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Method Fisharebest\\\\Webtrees\\\\DB\\:\\:update\\(\\) should return Doctrine\\\\DBAL\\\\Query\\\\QueryBuilder but returns int\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Method Fisharebest\\\\Webtrees\\\\DB\\\\Drivers\\\\DriverInterface\\:\\:connect\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Drivers/DriverInterface.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Call to an undefined static method Illuminate\\\\Database\\\\Capsule\\\\Manager\\:\\:getTheConnection\\(\\)\\.$#',
+    'count' => 5,
+    'path' => __DIR__ . '/app/DB/GroupConcat.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Method Fisharebest\\\\Webtrees\\\\DB\\\\Query\\:\\:pluck\\(\\) should return Fisharebest\\\\Webtrees\\\\Arr\\<int\\|string, int\\|string\\> but returns Fisharebest\\\\Webtrees\\\\Arr\\<\\(int\\|string\\), mixed\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Query.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Method Fisharebest\\\\Webtrees\\\\DB\\\\Query\\:\\:rows\\(\\) should return Fisharebest\\\\Webtrees\\\\Arr\\<int, object\\> but returns Fisharebest\\\\Webtrees\\\\Arr\\<\\(int\\|string\\), mixed\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Query.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Access to an undefined property Fisharebest\\\\Webtrees\\\\DB\\\\Table\\:\\:\\$unique_keys\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Table.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Parameter \\$callback of function array_walk expects callable\\(Fisharebest\\\\Webtrees\\\\DB\\\\Column\\|Fisharebest\\\\Webtrees\\\\DB\\\\ForeignKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\Index\\|Fisharebest\\\\Webtrees\\\\DB\\\\PrimaryKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\UniqueIndex, int\\)\\: mixed, Closure\\(Fisharebest\\\\Webtrees\\\\DB\\\\ForeignKey, int\\|string\\)\\: void given\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Table.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Parameter \\$callback of function array_walk expects callable\\(Fisharebest\\\\Webtrees\\\\DB\\\\Column\\|Fisharebest\\\\Webtrees\\\\DB\\\\ForeignKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\Index\\|Fisharebest\\\\Webtrees\\\\DB\\\\PrimaryKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\UniqueIndex, int\\)\\: mixed, Closure\\(Fisharebest\\\\Webtrees\\\\DB\\\\Index, int\\|string\\)\\: void given\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Table.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Parameter \\$callback of function array_walk expects callable\\(Fisharebest\\\\Webtrees\\\\DB\\\\Column\\|Fisharebest\\\\Webtrees\\\\DB\\\\ForeignKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\Index\\|Fisharebest\\\\Webtrees\\\\DB\\\\PrimaryKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\UniqueIndex, int\\)\\: mixed, Closure\\(Fisharebest\\\\Webtrees\\\\DB\\\\UniqueIndex, int\\|string\\)\\: void given\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Table.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Parameter \\$columns of method Doctrine\\\\DBAL\\\\Schema\\\\Table\\:\\:__construct\\(\\) expects array\\<Doctrine\\\\DBAL\\\\Schema\\\\Column\\>, array\\<int, Fisharebest\\\\Webtrees\\\\DB\\\\Column\\|Fisharebest\\\\Webtrees\\\\DB\\\\ForeignKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\Index\\|Fisharebest\\\\Webtrees\\\\DB\\\\PrimaryKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\UniqueIndex\\> given\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Table.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Parameter \\$fkConstraints of method Doctrine\\\\DBAL\\\\Schema\\\\Table\\:\\:__construct\\(\\) expects array\\<Doctrine\\\\DBAL\\\\Schema\\\\ForeignKeyConstraint\\>, array\\<int, Fisharebest\\\\Webtrees\\\\DB\\\\Column\\|Fisharebest\\\\Webtrees\\\\DB\\\\ForeignKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\Index\\|Fisharebest\\\\Webtrees\\\\DB\\\\PrimaryKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\UniqueIndex\\> given\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Table.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Parameter \\$indexes of method Doctrine\\\\DBAL\\\\Schema\\\\Table\\:\\:__construct\\(\\) expects array\\<Doctrine\\\\DBAL\\\\Schema\\\\Index\\>, array\\<int, Fisharebest\\\\Webtrees\\\\DB\\\\Column\\|Fisharebest\\\\Webtrees\\\\DB\\\\ForeignKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\Index\\|Fisharebest\\\\Webtrees\\\\DB\\\\PrimaryKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\UniqueIndex\\> given\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Table.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Property Fisharebest\\\\Webtrees\\\\DB\\\\Table\\:\\:\\$columns \\(array\\<int, Fisharebest\\\\Webtrees\\\\DB\\\\Column\\>\\) does not accept array\\<int, Fisharebest\\\\Webtrees\\\\DB\\\\Column\\|Fisharebest\\\\Webtrees\\\\DB\\\\ForeignKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\Index\\|Fisharebest\\\\Webtrees\\\\DB\\\\PrimaryKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\UniqueIndex\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Table.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Property Fisharebest\\\\Webtrees\\\\DB\\\\Table\\:\\:\\$foreign_keys \\(array\\<int, Fisharebest\\\\Webtrees\\\\DB\\\\ForeignKey\\>\\) does not accept array\\<int, Fisharebest\\\\Webtrees\\\\DB\\\\Column\\|Fisharebest\\\\Webtrees\\\\DB\\\\ForeignKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\Index\\|Fisharebest\\\\Webtrees\\\\DB\\\\PrimaryKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\UniqueIndex\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Table.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Property Fisharebest\\\\Webtrees\\\\DB\\\\Table\\:\\:\\$indexes \\(array\\<int, Fisharebest\\\\Webtrees\\\\DB\\\\Index\\>\\) does not accept array\\<int, Fisharebest\\\\Webtrees\\\\DB\\\\Column\\|Fisharebest\\\\Webtrees\\\\DB\\\\ForeignKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\Index\\|Fisharebest\\\\Webtrees\\\\DB\\\\PrimaryKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\UniqueIndex\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Table.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Property Fisharebest\\\\Webtrees\\\\DB\\\\Table\\:\\:\\$primary_keys \\(array\\<int, Fisharebest\\\\Webtrees\\\\DB\\\\PrimaryKey\\>\\) does not accept array\\<int, Fisharebest\\\\Webtrees\\\\DB\\\\Column\\|Fisharebest\\\\Webtrees\\\\DB\\\\ForeignKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\Index\\|Fisharebest\\\\Webtrees\\\\DB\\\\PrimaryKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\UniqueIndex\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Table.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Property Fisharebest\\\\Webtrees\\\\DB\\\\Table\\:\\:\\$unique_indexes \\(array\\<int, Fisharebest\\\\Webtrees\\\\DB\\\\UniqueIndex\\>\\) does not accept array\\<int, Fisharebest\\\\Webtrees\\\\DB\\\\Column\\|Fisharebest\\\\Webtrees\\\\DB\\\\ForeignKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\Index\\|Fisharebest\\\\Webtrees\\\\DB\\\\PrimaryKey\\|Fisharebest\\\\Webtrees\\\\DB\\\\UniqueIndex\\>\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/DB/Table.php',
 ];
 $ignoreErrors[] = [
     'message' => '#^Method Fisharebest\\\\Webtrees\\\\Elements\\\\AgeAtEvent\\:\\:value\\(\\) should return string but returns string\\|null\\.$#',
@@ -1089,12 +1214,12 @@ $ignoreErrors[] = [
     'path' => __DIR__ . '/app/Http/RequestHandlers/SearchReplaceAction.php',
 ];
 $ignoreErrors[] = [
-    'message' => '#^Cannot call method isNotEmpty\\(\\) on mixed\\.$#',
+    'message' => '#^Cannot call method isNotEmpty\\(\\) on string\\.$#',
     'count' => 2,
     'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
 ];
 $ignoreErrors[] = [
-    'message' => '#^Cannot call method push\\(\\) on mixed\\.$#',
+    'message' => '#^Cannot call method push\\(\\) on string\\.$#',
     'count' => 2,
     'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
 ];
@@ -1104,128 +1229,48 @@ $ignoreErrors[] = [
     'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
 ];
 $ignoreErrors[] = [
-    'message' => '#^Parameter \\#1 \\$code of static method Fisharebest\\\\Webtrees\\\\I18N\\:\\:init\\(\\) expects string, mixed given\\.$#',
+    'message' => '#^Parameter \\#1 \\$data of method Fisharebest\\\\Webtrees\\\\Http\\\\RequestHandlers\\\\SetupWizard\\:\\:step1Language\\(\\) expects array\\<string, string\\>, array\\<string, Illuminate\\\\Support\\\\Collection\\<int, Fisharebest\\\\Localization\\\\Locale\\\\LocaleInterface\\>\\|Illuminate\\\\Support\\\\Collection\\<int, string\\>\\|int\\|string\\> given\\.$#',
     'count' => 1,
     'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
 ];
 $ignoreErrors[] = [
-    'message' => '#^Parameter \\#1 \\$driver of method Fisharebest\\\\Webtrees\\\\Services\\\\ServerCheckService\\:\\:serverErrors\\(\\) expects string, mixed given\\.$#',
+    'message' => '#^Parameter \\#1 \\$data of method Fisharebest\\\\Webtrees\\\\Http\\\\RequestHandlers\\\\SetupWizard\\:\\:step2CheckServer\\(\\) expects array\\<string, string\\>, array\\<string, Illuminate\\\\Support\\\\Collection\\<int, Fisharebest\\\\Localization\\\\Locale\\\\LocaleInterface\\>\\|Illuminate\\\\Support\\\\Collection\\<int, string\\>\\|int\\|string\\> given\\.$#',
     'count' => 1,
     'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
 ];
 $ignoreErrors[] = [
-    'message' => '#^Parameter \\#1 \\$driver of method Fisharebest\\\\Webtrees\\\\Services\\\\ServerCheckService\\:\\:serverWarnings\\(\\) expects string, mixed given\\.$#',
+    'message' => '#^Parameter \\#1 \\$data of method Fisharebest\\\\Webtrees\\\\Http\\\\RequestHandlers\\\\SetupWizard\\:\\:step3DatabaseType\\(\\) expects array\\<string, string\\>, array\\<string, Illuminate\\\\Support\\\\Collection\\<int, Fisharebest\\\\Localization\\\\Locale\\\\LocaleInterface\\>\\|Illuminate\\\\Support\\\\Collection\\<int, string\\>\\|int\\|string\\> given\\.$#',
     'count' => 1,
     'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
 ];
 $ignoreErrors[] = [
-    'message' => '#^Parameter \\#1 \\$identifier of method Fisharebest\\\\Webtrees\\\\Services\\\\UserService\\:\\:findByIdentifier\\(\\) expects string, mixed given\\.$#',
-    'count' => 2,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\#1 \\$url of function redirect expects string, mixed given\\.$#',
+    'message' => '#^Parameter \\#1 \\$data of method Fisharebest\\\\Webtrees\\\\Http\\\\RequestHandlers\\\\SetupWizard\\:\\:step4DatabaseConnection\\(\\) expects array\\<string, string\\>, array\\<string, Illuminate\\\\Support\\\\Collection\\<int, Fisharebest\\\\Localization\\\\Locale\\\\LocaleInterface\\>\\|Illuminate\\\\Support\\\\Collection\\<int, string\\>\\|int\\|string\\> given\\.$#',
     'count' => 1,
     'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
 ];
 $ignoreErrors[] = [
-    'message' => '#^Parameter \\#1 \\$user_name of method Fisharebest\\\\Webtrees\\\\Services\\\\UserService\\:\\:create\\(\\) expects string, mixed given\\.$#',
+    'message' => '#^Parameter \\#1 \\$data of method Fisharebest\\\\Webtrees\\\\Http\\\\RequestHandlers\\\\SetupWizard\\:\\:step5Administrator\\(\\) expects array\\<string, string\\>, array\\<string, Illuminate\\\\Support\\\\Collection\\<int, Fisharebest\\\\Localization\\\\Locale\\\\LocaleInterface\\>\\|Illuminate\\\\Support\\\\Collection\\<int, string\\>\\|int\\|string\\> given\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Parameter \\#1 \\$data of method Fisharebest\\\\Webtrees\\\\Http\\\\RequestHandlers\\\\SetupWizard\\:\\:step6Install\\(\\) expects array\\<string, string\\>, array\\<string, Illuminate\\\\Support\\\\Collection\\<int, Fisharebest\\\\Localization\\\\Locale\\\\LocaleInterface\\>\\|Illuminate\\\\Support\\\\Collection\\<int, string\\>\\|int\\|string\\> given\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Parameter \\#1 \\$driver of method Fisharebest\\\\Webtrees\\\\Services\\\\ServerCheckService\\:\\:serverErrors\\(\\) expects string, Illuminate\\\\Support\\\\Collection\\<int, Fisharebest\\\\Localization\\\\Locale\\\\LocaleInterface\\>\\|int\\|string given\\.$#',
+    'count' => 1,
+    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
+];
+$ignoreErrors[] = [
+    'message' => '#^Parameter \\#1 \\$driver of method Fisharebest\\\\Webtrees\\\\Services\\\\ServerCheckService\\:\\:serverWarnings\\(\\) expects string, Illuminate\\\\Support\\\\Collection\\<int, Fisharebest\\\\Localization\\\\Locale\\\\LocaleInterface\\>\\|Illuminate\\\\Support\\\\Collection\\<int, string\\>\\|int\\|string given\\.$#',
     'count' => 1,
     'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
 ];
 $ignoreErrors[] = [
     'message' => '#^Parameter \\#1 \\$value of function e expects BackedEnum\\|Illuminate\\\\Contracts\\\\Support\\\\DeferringDisplayableValue\\|Illuminate\\\\Contracts\\\\Support\\\\Htmlable\\|string\\|null, string\\|false given\\.$#',
     'count' => 1,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\#1 \\$wtname of method Fisharebest\\\\Webtrees\\\\Http\\\\RequestHandlers\\\\SetupWizard\\:\\:checkAdminUser\\(\\) expects string, mixed given\\.$#',
-    'count' => 1,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\#2 \\$real_name of method Fisharebest\\\\Webtrees\\\\Services\\\\UserService\\:\\:create\\(\\) expects string, mixed given\\.$#',
-    'count' => 1,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\#2 \\$setting_value of method Fisharebest\\\\Webtrees\\\\User\\:\\:setPreference\\(\\) expects string, mixed given\\.$#',
-    'count' => 1,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\#2 \\$wtuser of method Fisharebest\\\\Webtrees\\\\Http\\\\RequestHandlers\\\\SetupWizard\\:\\:checkAdminUser\\(\\) expects string, mixed given\\.$#',
-    'count' => 1,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\#3 \\$email of method Fisharebest\\\\Webtrees\\\\Services\\\\UserService\\:\\:create\\(\\) expects string, mixed given\\.$#',
-    'count' => 1,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\#3 \\$wtpass of method Fisharebest\\\\Webtrees\\\\Http\\\\RequestHandlers\\\\SetupWizard\\:\\:checkAdminUser\\(\\) expects string, mixed given\\.$#',
-    'count' => 1,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\#4 \\$password of method Fisharebest\\\\Webtrees\\\\Services\\\\UserService\\:\\:create\\(\\) expects string, mixed given\\.$#',
-    'count' => 1,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\#4 \\$wtemail of method Fisharebest\\\\Webtrees\\\\Http\\\\RequestHandlers\\\\SetupWizard\\:\\:checkAdminUser\\(\\) expects string, mixed given\\.$#',
-    'count' => 1,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\$ca of static method Fisharebest\\\\Webtrees\\\\DB\\:\\:connect\\(\\) expects string, mixed given\\.$#',
-    'count' => 2,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\$certificate of static method Fisharebest\\\\Webtrees\\\\DB\\:\\:connect\\(\\) expects string, mixed given\\.$#',
-    'count' => 2,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\$database of static method Fisharebest\\\\Webtrees\\\\DB\\:\\:connect\\(\\) expects string, mixed given\\.$#',
-    'count' => 1,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\$driver of static method Fisharebest\\\\Webtrees\\\\DB\\:\\:connect\\(\\) expects string, mixed given\\.$#',
-    'count' => 2,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\$host of static method Fisharebest\\\\Webtrees\\\\DB\\:\\:connect\\(\\) expects string, mixed given\\.$#',
-    'count' => 2,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\$key of static method Fisharebest\\\\Webtrees\\\\DB\\:\\:connect\\(\\) expects string, mixed given\\.$#',
-    'count' => 2,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\$password of static method Fisharebest\\\\Webtrees\\\\DB\\:\\:connect\\(\\) expects string, mixed given\\.$#',
-    'count' => 2,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\$port of static method Fisharebest\\\\Webtrees\\\\DB\\:\\:connect\\(\\) expects string, mixed given\\.$#',
-    'count' => 2,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\$prefix of static method Fisharebest\\\\Webtrees\\\\DB\\:\\:connect\\(\\) expects string, mixed given\\.$#',
-    'count' => 2,
-    'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
-];
-$ignoreErrors[] = [
-    'message' => '#^Parameter \\$username of static method Fisharebest\\\\Webtrees\\\\DB\\:\\:connect\\(\\) expects string, mixed given\\.$#',
-    'count' => 2,
     'path' => __DIR__ . '/app/Http/RequestHandlers/SetupWizard.php',
 ];
 $ignoreErrors[] = [

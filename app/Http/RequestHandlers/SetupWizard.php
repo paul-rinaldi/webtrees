@@ -66,19 +66,23 @@ class SetupWizard implements RequestHandlerInterface
     private const DEFAULT_DBTYPE = DB::MYSQL;
     private const DEFAULT_PREFIX = 'wt_';
     private const DEFAULT_DATA   = [
-        'baseurl' => '',
-        'lang'    => '',
-        'dbtype'  => self::DEFAULT_DBTYPE,
-        'dbhost'  => '',
-        'dbport'  => '',
-        'dbuser'  => '',
-        'dbpass'  => '',
-        'dbname'  => '',
-        'tblpfx'  => self::DEFAULT_PREFIX,
-        'wtname'  => '',
-        'wtuser'  => '',
-        'wtpass'  => '',
-        'wtemail' => '',
+        'baseurl'  => '',
+        'lang'     => '',
+        'dbtype'   => self::DEFAULT_DBTYPE,
+        'dbhost'   => '',
+        'dbport'   => '',
+        'dbuser'   => '',
+        'dbpass'   => '',
+        'dbname'   => '',
+        'tblpfx'   => self::DEFAULT_PREFIX,
+        'wtname'   => '',
+        'wtuser'   => '',
+        'wtpass'   => '',
+        'wtemail'  => '',
+        'dbkey'    => '',
+        'dbcert'   => '',
+        'dbca'     => '',
+        'dbverify' => '',
     ];
 
     private const DEFAULT_PORTS = [
@@ -193,7 +197,7 @@ class SetupWizard implements RequestHandlerInterface
     /**
      * @param ServerRequestInterface $request
      *
-     * @return array<string,mixed>
+     * @return array<string,string>
      */
     private function userData(ServerRequestInterface $request): array
     {
@@ -265,7 +269,7 @@ class SetupWizard implements RequestHandlerInterface
     }
 
     /**
-     * @param array<string,mixed> $data
+     * @param array<string,string> $data
      *
      * @return ResponseInterface
      */
@@ -275,7 +279,7 @@ class SetupWizard implements RequestHandlerInterface
     }
 
     /**
-     * @param array<string,mixed> $data
+     * @param array<string,string> $data
      *
      * @return ResponseInterface
      */
@@ -285,7 +289,7 @@ class SetupWizard implements RequestHandlerInterface
     }
 
     /**
-     * @param array<string,mixed> $data
+     * @param array<string,string> $data
      *
      * @return ResponseInterface
      */
@@ -299,7 +303,7 @@ class SetupWizard implements RequestHandlerInterface
     }
 
     /**
-     * @param array<string,mixed> $data
+     * @param array<string,string> $data
      *
      * @return ResponseInterface
      */
@@ -313,7 +317,7 @@ class SetupWizard implements RequestHandlerInterface
     }
 
     /**
-     * @param array<string,mixed> $data
+     * @param array<string,string> $data
      *
      * @return ResponseInterface
      */
@@ -335,7 +339,7 @@ class SetupWizard implements RequestHandlerInterface
     }
 
     /**
-     * @param array<string,mixed> $data
+     * @param array<string,string> $data
      *
      * @return ResponseInterface
      */
@@ -381,7 +385,7 @@ class SetupWizard implements RequestHandlerInterface
     }
 
     /**
-     * @param array<string,mixed> $data
+     * @param array<string,string> $data
      *
      * @return void
      */
@@ -427,7 +431,7 @@ class SetupWizard implements RequestHandlerInterface
     }
 
     /**
-     * @param array<string,mixed> $data
+     * @param array<string,string> $data
      *
      * @return void
      */
